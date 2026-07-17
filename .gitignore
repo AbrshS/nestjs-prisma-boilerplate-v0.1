@@ -42,3 +42,8 @@ lerna-debug.log*
 
 # Claude Code runtime state
 .claude/scheduled_tasks.lock
+
+# AI editor and agent files
+.claude/
+CLAUDE.md
+AGENTS.md
