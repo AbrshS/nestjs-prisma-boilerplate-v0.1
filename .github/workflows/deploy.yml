@@ -65,7 +65,7 @@ jobs:
 
             # Rebuild and restart the container
             echo "Rebuilding and restarting backend services..."
-            sudo docker compose -f "$COMPOSE_FILE" build --pull --no-cache && sudo docker compose -f "$COMPOSE_FILE" up -d --remove-orphans
+            sudo docker compose -f "$COMPOSE_FILE" build && sudo docker compose -f "$COMPOSE_FILE" up -d --remove-orphans
 
             # Clean up unused Docker images to save space
             echo "Pruning unused Docker images..."
